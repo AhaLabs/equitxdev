@@ -2,6 +2,8 @@
 use loam_sdk::{derive_contract, soroban_sdk::Vec};
 use loam_subcontract_core::{admin::Admin, Core};
 
-mod contract;
+pub mod cdp;
 
-pub use contract::Landscape;
+mod equitx_index;
+
+pub use equitx_index::EquitXIndex;
